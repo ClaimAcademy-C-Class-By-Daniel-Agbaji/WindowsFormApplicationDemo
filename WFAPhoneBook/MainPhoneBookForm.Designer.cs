@@ -1,5 +1,5 @@
 ﻿
-namespace PhoneBookApp
+namespace WFAPhoneBook
 {
     partial class Form1
     {
@@ -48,7 +48,7 @@ namespace PhoneBookApp
             this.windowsToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(800, 48);
+            this.menuStrip1.Size = new System.Drawing.Size(1071, 42);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -57,7 +57,7 @@ namespace PhoneBookApp
             this.contactsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.businessToolStripMenuItem});
             this.contactsToolStripMenuItem.Name = "contactsToolStripMenuItem";
-            this.contactsToolStripMenuItem.Size = new System.Drawing.Size(127, 44);
+            this.contactsToolStripMenuItem.Size = new System.Drawing.Size(127, 38);
             this.contactsToolStripMenuItem.Text = "Contacts";
             // 
             // businessToolStripMenuItem
@@ -65,6 +65,7 @@ namespace PhoneBookApp
             this.businessToolStripMenuItem.Name = "businessToolStripMenuItem";
             this.businessToolStripMenuItem.Size = new System.Drawing.Size(359, 44);
             this.businessToolStripMenuItem.Text = "Business";
+            this.businessToolStripMenuItem.Click += new System.EventHandler(this.businessToolStripMenuItem_Click);
             // 
             // windowsToolStripMenuItem
             // 
@@ -73,7 +74,7 @@ namespace PhoneBookApp
             this.tileHorizontalToolStripMenuItem,
             this.tileVerticalToolStripMenuItem});
             this.windowsToolStripMenuItem.Name = "windowsToolStripMenuItem";
-            this.windowsToolStripMenuItem.Size = new System.Drawing.Size(132, 44);
+            this.windowsToolStripMenuItem.Size = new System.Drawing.Size(132, 38);
             this.windowsToolStripMenuItem.Text = "Windows";
             // 
             // cascadeToolStripMenuItem
@@ -81,24 +82,27 @@ namespace PhoneBookApp
             this.cascadeToolStripMenuItem.Name = "cascadeToolStripMenuItem";
             this.cascadeToolStripMenuItem.Size = new System.Drawing.Size(359, 44);
             this.cascadeToolStripMenuItem.Text = "Cascade";
+            this.cascadeToolStripMenuItem.Click += new System.EventHandler(this.cascadeToolStripMenuItem_Click);
             // 
             // tileHorizontalToolStripMenuItem
             // 
             this.tileHorizontalToolStripMenuItem.Name = "tileHorizontalToolStripMenuItem";
             this.tileHorizontalToolStripMenuItem.Size = new System.Drawing.Size(359, 44);
             this.tileHorizontalToolStripMenuItem.Text = "Tile Horizontal";
+            this.tileHorizontalToolStripMenuItem.Click += new System.EventHandler(this.tileHorizontalToolStripMenuItem_Click);
             // 
             // tileVerticalToolStripMenuItem
             // 
             this.tileVerticalToolStripMenuItem.Name = "tileVerticalToolStripMenuItem";
             this.tileVerticalToolStripMenuItem.Size = new System.Drawing.Size(359, 44);
             this.tileVerticalToolStripMenuItem.Text = "Tile Vertical";
+            this.tileVerticalToolStripMenuItem.Click += new System.EventHandler(this.tileVerticalToolStripMenuItem_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1071, 558);
             this.Controls.Add(this.menuStrip1);
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
